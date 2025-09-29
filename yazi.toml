@@ -3,10 +3,9 @@ linemode = 'size'
 
 [opener]
 edit = [
-  { run = 'nvim $@', block = true, desc = "nvim (current selected)", for = "unix" },
-  { run = 'nvim', block = true, desc = "nvim (cmd)", for = "unix" },
-  { run = 'code %*', orphan = true, desc = "code", for = "windows" },
-  { run = 'code -w %*', block = true, desc = "code (block)", for = "windows" },
+  { run = 'code $@', orphan = true, desc = "Command: code", for = "unix" },
+  { run = 'code $@', orphan = true, desc = "Command: code", for = "windows" },
+  { run = 'nvim $@', block = true, desc = "Command: nvim", for = "unix" },
 ]
 
 [plugin]
